@@ -59,7 +59,7 @@
 }
 
 .cs_theme_6 {
-  --accent-color: #307bc4;
+  --accent-color: #1a6837;
 }
 
 /*--------------------------------------------------------------
@@ -1701,7 +1701,7 @@ hr {
 }
 
 .cs_heading_bg {
-  background-color: #307bc4;
+  background-color: #1a6837;
 }
 
 .cs_secondary_bg {
@@ -5227,7 +5227,7 @@ a.ui-button:active,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #307bc4;
+  background-color: #1a6837;
   gap: 40px;
   padding: 140px 0 90px 0;
 }
