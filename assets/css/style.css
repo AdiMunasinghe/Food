@@ -8364,6 +8364,11 @@ a.ui-button:active,
   border-color: var(--heading-color);
   border-radius: 0;
 }
+.list-gap {
+  display: flex;
+  flex-direction: column; /* list vertical */
+  gap: 10px;              /* space between li */
+}
 
 /*--------------------------------------------------------------
   14. CTA
