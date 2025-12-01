@@ -219,6 +219,50 @@
                width: calc(25% - 8px);
            }
        }
+
+       @media (max-width: 768px) {
+    .row {
+      flex-direction: column !important;
+    }
+    .panel {
+      width: 100% !important;
+      margin-bottom: 20px !important;
+    }
+    .nutri {
+      flex-direction: column !important;
+      gap: 10px !important;
+    }
+    .nutri-left {
+      border-right: none !important;
+      padding-right: 0 !important;
+      border-bottom: 1px solid rgba(0,0,0,0.1);
+      padding-bottom: 10px !important;
+      width: 100% !important;
+    }
+    .nutri-right {
+      padding-left: 0 !important;
+      width: 100% !important;
+      justify-content: space-between !important;
+    }
+    img {
+      max-width: 70% !important;
+    }
+  }
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column !important;
+      text-align: center !important;
+      gap: 10px !important;
+    }
+    .header-text {
+      text-align: center !important;
+      font-size: 16px !important;
+    }
+    .header-logo {
+      height: 40px !important;
+    }
+  }
+
    </style>
 </head>
 
@@ -529,88 +573,159 @@
             <p>We eat for nutrition, but we also eat for enjoyment and social engagement.
                 Food Imperative is a cost-effective approach to nutrition to help keep food, not supplementary medication, on the menu.</p>
         </div>
+        <div style="max-width:1100px; margin:auto;">
+
+          <!-- FLEX ROW -->
+          <div class="row" style="display:flex; gap:20px; flex-wrap:wrap;">
+        
+            <!-- LEFT PANEL -->
+            <div class="panel" style="flex:1; min-width:300px; background:#fff; padding:28px; border-radius:6px; box-shadow:0 6px 18px rgba(0,0,0,0.08); display:flex; flex-direction:column;">
+        
+              <div style="font-size:28px; font-weight:bold; font-family:Georgia, serif; margin-bottom:6px;">
+                Vanilla Bean
+              </div>
+        
+              <div style="font-size:13px; font-weight:bold; color:#7b7270; margin-bottom:14px;">
+                125ML × 45 units/ctn
+              </div>
+        
+              <div style="flex:1; display:flex; justify-content:center; align-items:center;">
+                <img src="/Food/assets/img/AngledCartonBox.png" 
+                     style="max: width 100%; height:auto; aspect-ratio: 3/2; filter:drop-shadow(0px 6px 18px rgba(0,0,0,0.2));">
+              </div>
+        
+              <!-- Nutrition -->
+              <div class="nutri" style="margin-top:14px; background:#f6f1ec; border-top:2px solid rgba(0,0,0,0.06); padding:12px; display:flex; align-items:center; gap:14px;">
+        
+                <div class="nutri-left" style="border-right:1px solid rgba(0,0,0,0.15); padding-right:12px;">
+                  <div style="font-weight:bold; font-family:Georgia, serif;">Nutritional Information</div>
+                  <div style="font-size:13px; font-weight:bold; color:#7b7270;">per serving</div>
+                </div>
+        
+                <div class="nutri-right" style="display:flex; gap:20px;">
+                  <div>
+                    <div style="font-weight:bold;">Protein</div>
+                    <div style="color:#6d6460; font-weight:bold;">8.4g</div>
+                  </div>
+        
+                  <div>
+                    <div style="font-weight:bold;">Energy</div>
+                    <div style="color:#6d6460; font-weight:bold;">655kJ</div>
+                  </div>
+        
+                  <div>
+                    <div style="font-weight:bold;">Fibre</div>
+                    <div style="color:#6d6460; font-weight:bold;">2.4g</div>
+                  </div>
+                </div>
+              </div>
+        
+            </div>
+        
+            <!-- RIGHT PANEL -->
+            <div class="panel" style="flex:1; min-width:300px; background:#fff; padding:28px; border-radius:6px; box-shadow:0 6px 18px rgba(0,0,0,0.08); display:flex; flex-direction:column;">
+        
+              <div style="font-size:28px; font-weight:bold; font-family:Georgia, serif; margin-bottom:6px;">
+                Vanilla Bean
+              </div>
+        
+              <div style="font-size:13px; font-weight:bold; color:#7b7270; margin-bottom:14px;">
+                5L /unit
+              </div>
+        
+              <div style="flex:1; display:flex; justify-content:center; align-items:center;">
+                <img src="/Food/assets/img/5LVanillaBean-CMYK-EDIT.jpg" 
+                     style="max: width 100%; height:auto; aspect-ratio: 3/2; filter:drop-shadow(0px 6px 18px rgba(0,0,0,0.2));">
+              </div>
+        
+              <!-- Nutrition -->
+              <div class="nutri" style="margin-top:14px; background:#f6f1ec; border-top:2px solid rgba(0,0,0,0.06); padding:12px; display:flex; align-items:center; gap:14px;">
+        
+                <div class="nutri-left" style="border-right:1px solid rgba(0,0,0,0.15); padding-right:12px;">
+                  <div style="font-weight:bold; font-family:Georgia, serif;">Nutritional Information</div>
+                  <div style="font-size:13px; font-weight:bold; color:#7b7270;">per 100g</div>
+                </div>
+        
+                <div class="nutri-right" style="display:flex; gap:20px;">
+                  <div>
+                    <div style="font-weight:bold;">Protein</div>
+                    <div style="color:#6d6460; font-weight:bold;">12.1g</div>
+                  </div>
+        
+                  <div>
+                    <div style="font-weight:bold;">Energy</div>
+                    <div style="color:#6d6460; font-weight:bold;">889.3kJ</div>
+                  </div>
+        
+                  <div>
+                    <div style="font-weight:bold;">Fibre</div>
+                    <div style="color:#6d6460; font-weight:bold;">3.6g</div>
+                  </div>
+                </div>
+              </div>
+        
+            </div>
+        
+          </div>
+        
+          <div style="text-align:center; margin-top:12px; font-size:13px; color:#7b7270; padding:12px;">
+            Designed suitable for use with IDDSI framework Level 1, 2, & 3
+          </div>
+        
+        </div>
+
+        <p style="font-weight: 500; text-align: center; max-width: 720px; margin:auto; padding-top: 40px; padding-bottom: 40px;">Designed for Aged Care and Health Care Services, Food Imperative is easy to eat and slow melting making
+          it suitable for slow consumption scenarios. Visit our website for more: <a href="mailto:www.foodimperative.com.au" style="font-weight: 700;">www.foodimperative.com.au</a>
+        </p>
+        <div class="header" 
+     style="background-color:#064F32; padding:20px 30px; display:flex; align-items:center; justify-content:space-between; color:white;">
+
+    <!-- Logo -->
+    <img src="/Food/assets/img/footerlogo.png" alt="Logo" style="max-width: 200px;">
+
+    <!-- Right-side text -->
+    <div class="header-text"
+         style="text-align:right; font-weight:bold; font-size:18px; line-height:1.2;">
+        Fortified Frozen Dessert Range<br>
+        New and Improved Recipe
+    </div>
+
+</div>
+
+<section class="cs_about cs_style_1 cs_type_2 cs_hide_before_after position-relative" style="margin-top: -40px; margin-bottom: -80px;">
+  <div class="cs_height_120 cs_height_lg_80"></div>
+  <div class="container">
+    <div class="row align-items-start cs_gap_y_40">
+      <div class="col-lg-7 wow fadeInRight" data-wow-duration="0.9s" data-wow-delay="0.25s">
+        <div class="cs_about_content">
+          <div class="cs_style_1">
+            <h2 class="cs_section_title cs_fs_48 mb-0"><span class="cs_accent_color"> Nutritional Frozen Dessert 
+            </span></h2>
+            <p style="font-weight: 500; max-width: 720px; margin:auto;">Designed suitable for use with IDDSI framework Level 1, 2, 3 & 4s
+            </p>
+          </div>
+        
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <p class="cs_about_text cs_heading_color"><span style="font-weight: 700;">Ideal For:</span> Dessert, Mid Meal Snack,
+          Managing and Preventing Malnutrition
+          </p>
+          <p class="cs_about_text cs_heading_color" style="margin-top: -20px;"><span style="font-weight: 700;">Storage:</span> Keep frozen at or below -18°C
+            Use: Serve and consume from frozen</p>
+       
+      </div>
+    </div>
+  </div>
+  <div class="cs_height_120 cs_height_lg_80"></div>
+</section>
+
+        
 
         <!-- Swiper -->
         <div class="swiper product-swiper">
             <div class="swiper-wrapper">
-
-              <div class="swiper-slide">
-                <div class="cs_single_product_thumb_wrapper">
-                    <div class="cs_single_product_thumb">
-                        <div class="cs_single_product_thumb_item cs_radius_10">
-                            <img src="/Food/assets/img/ice2.png" alt="Vanilla Bean Large" style="width: 100%; max-width: 600px; aspect-ratio: 3 / 2;">
-                        </div>
-                    </div>
-                    <!-- <div class="cs_single_product_nav">
-                        <div class="cs_single_product_thumb_mini cs_radius_10">
-                            <img src="/assets/img/Screenshot 2025-11-24 at 18.54.03.png" alt="Vanilla Bean Thumb 1" style="width: 200px; height: 100px;">
-                        </div>
-                        <div class="cs_single_product_thumb_mini cs_radius_10">
-                            <img src="/assets/img/Screenshot 2025-11-24 at 18.54.03.png" alt="Vanilla Bean Thumb 2" style="width: 200px; height: 100px;">
-                        </div>
-                        <div class="cs_single_product_thumb_mini cs_radius_10">
-                            <img src="/assets/img/Screenshot 2025-11-24 at 18.54.03.png" alt="Vanilla Bean Thumb 3" style="width: 200px; height: 100px;">
-                        </div>
-                        <div class="cs_single_product_thumb_mini cs_radius_10">
-                            <img src="/assets/img/Screenshot 2025-11-24 at 18.54.03.png" alt="Vanilla Bean Thumb 4" style="width: 200px; height: 100px;">
-                        </div>
-                        <div class="cs_single_product_thumb_mini cs_radius_10">
-                            <img src="/assets/img/Screenshot 2025-11-24 at 18.54.03.png" alt="Vanilla Bean Thumb 5" style="width: 200px; height: 100px;">
-                        </div>
-                    </div> -->
-                </div>
-                <div class="cs_single_product_details">
-                    <h2>Vanilla Bean</h2>
-                    <h5>125ML x 24 units/ctn</h4>
-                    <h4>Nutritional Information</h4>
-                    <h6>per serving</h4>
-                    <ul class="cs_single_product_details_text cs_mb_35">
-                        <li>Protein 8.4g</li>
-                        <li>Energy 655kJ</li>
-                        <li>Fibre 2.4g</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="cs_single_product_thumb_wrapper">
-                  <div class="cs_single_product_thumb">
-                      <div class="cs_single_product_thumb_item cs_radius_10">
-                          <img src="/Food/assets/img/ice1.png" alt="Vanilla Bean Large" style="width: 100%; max-width: 600px; aspect-ratio: 3 / 2;">
-                      </div>
-                  </div>
-                  <!-- <div class="cs_single_product_nav">
-                      <div class="cs_single_product_thumb_mini cs_radius_10">
-                          <img src="/assets/img/Screenshot 2025-11-24 at 18.54.03.png" alt="Vanilla Bean Thumb 1" style="width: 200px; height: 100px;">
-                      </div>
-                      <div class="cs_single_product_thumb_mini cs_radius_10">
-                          <img src="/assets/img/Screenshot 2025-11-24 at 18.54.03.png" alt="Vanilla Bean Thumb 2" style="width: 200px; height: 100px;">
-                      </div>
-                      <div class="cs_single_product_thumb_mini cs_radius_10">
-                          <img src="/assets/img/Screenshot 2025-11-24 at 18.54.03.png" alt="Vanilla Bean Thumb 3" style="width: 200px; height: 100px;">
-                      </div>
-                      <div class="cs_single_product_thumb_mini cs_radius_10">
-                          <img src="/assets/img/Screenshot 2025-11-24 at 18.54.03.png" alt="Vanilla Bean Thumb 4" style="width: 200px; height: 100px;">
-                      </div>
-                      <div class="cs_single_product_thumb_mini cs_radius_10">
-                          <img src="/assets/img/Screenshot 2025-11-24 at 18.54.03.png" alt="Vanilla Bean Thumb 5" style="width: 200px; height: 100px;">
-                      </div>
-                  </div> -->
-              </div>
-              <div class="cs_single_product_details">
-                  <h2>Vanilla Bean</h2>
-                  <h5>5L /unit</h4>
-                  <h4>Nutritional Information</h4>
-                  <h6>per 100g</h4>
-                  <ul class="cs_single_product_details_text cs_mb_35">
-                      <li>Protein 12.1g</li>
-                      <li>Energy 889.3KJ</li>
-                      <li>Fibre 3.6g</li>
-                  </ul>
-              </div>
-          </div>
-                
-                <!-- Slide 1 - Fortified Vanilla Bean -->
+               <!-- Slide 1 - Fortified Vanilla Bean -->
                 <div class="swiper-slide">
                     <div class="cs_single_product_thumb_wrapper">
                         <div class="cs_single_product_thumb">
