@@ -262,6 +262,14 @@
       height: 40px !important;
     }
   }
+  @media (max-width: 768px) {
+  .imgCol { order: 2 !important; }
+  .contentCol { order: 1 !important; }
+  .imgFull {
+    width: 100% !important;
+    height: auto !important;
+  }
+}
 
    </style>
 </head>
@@ -403,48 +411,38 @@
   <!-- End Features Section -->
   <!-- Start About Section -->
   <section class="cs_about cs_style_1 cs_type_2 cs_hide_before_after position-relative" style="margin-top: 40px;">
-    <div class="cs_height_120 cs_height_lg_80"></div>
-    <div class="container">
-      <div class="row align-items-center cs_gap_y_40">
-        <div class="col-lg-6">
-          <div class="cs_about_thumbnail">
-            <div class="cs_about_thumbnail_1 cs_hide_before_after">
-              <!-- <img src="/assets/img/ice1.png" alt="Image" style="width: 500px; height: 250px; margin-bottom: 10px;"> -->
-              <img src="/Food/assets/img/ice3.png" alt="Image" style="width: 500px; height: 250px;">
-              <!-- <div class="cs_commentbox cs_accent_bg">
-                <blockquote class="cs_white_color cs_opacity_9">“we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the moment”</blockquote>
-                <h3 class="cs_client_title cs_fs_20 cs_semibold cs_white_color mb-0">Don M Chain</h3>
-                <p class="cs_client_subtitle cs_heading_font mb-0 cs_white_color cs_opacity_8 fst-italic">Founder</p>
-              </div> -->
-              <!-- <div class="cs_about_shape_9 position-absolute">
-                <img src="assets/img/about_shape_5.png" alt="Shape Image">
-              </div> -->
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 wow fadeInRight" data-wow-duration="0.9s" data-wow-delay="0.25s">
-          <div class="cs_about_content">
-            <div class="cs_section_heading cs_style_1">
-              <p class="cs_section_subtitle cs_fs_18 cs_semibold cs_accent_color cs_heading_font">About us</p>
-              <h2 class="cs_section_title cs_fs_48 mb-0">Food Imperative <span class="cs_accent_color"> <br> Fortified Frozen Dessert
-              </span></h2>
-            </div>
-            <p class="cs_about_text cs_heading_color">Food Imperative frozen dessert is a nutrient-designed fortified food carefully created in consultation with dietitians who specialise in aged and health care services. It focuses on consumer experience, using a real food approach to deliver a great taste and flavour experience that is enjoyable to eat.</p>
-            <!-- <ul class="cs_list cs_style_3 cs_fs_18 cs_semibold cs_heading_color cs_mp0">
-              <li><i class="fa-solid fa-check"></i><span>Certified Doctors</span></li>
-              <li><i class="fa-solid fa-check"></i><span>24/7 Customers Support</span></li>
-              <li><i class="fa-solid fa-check"></i><span>Latest Technology System</span></li>
-              <li><i class="fa-solid fa-check"></i><span>Quality Services</span></li>
-              <li><i class="fa-solid fa-check"></i><span>Cure Guaranteed</span></li>
-              <li><i class="fa-solid fa-check"></i><span>Top quality Technician team</span></li>
-            </ul> -->
-          
+  <div class="cs_height_120 cs_height_lg_80"></div>
+  <div class="container">
+    <div class="row align-items-center cs_gap_y_40" style="display:flex; flex-wrap:wrap;">
+
+      <!-- IMAGE COLUMN (desktop order 1, mobile order 2) -->
+      <div class="col-lg-6 imgCol" style="order:1;">
+        <div class="cs_about_thumbnail">
+          <div class="cs_about_thumbnail_1 cs_hide_before_after">
+            <img src="/assets/img/ice3.png" alt="Image" class="imgFull" style="width:500px; height:250px;">
           </div>
         </div>
       </div>
+
+      <!-- CONTENT COLUMN (desktop order 2, mobile order 1) -->
+      <div class="col-lg-6 contentCol wow fadeInRight" style="order:2;" data-wow-duration="0.9s" data-wow-delay="0.25s">
+        <div class="cs_about_content">
+          <div class="cs_section_heading cs_style_1">
+            <p class="cs_section_subtitle cs_fs_18 cs_semibold cs_accent_color cs_heading_font">About us</p>
+            <h2 class="cs_section_title cs_fs_48 mb-0">
+              Food Imperative <span class="cs_accent_color"><br> Fortified Frozen Dessert</span>
+            </h2>
+          </div>
+          <p class="cs_about_text cs_heading_color">
+            Food Imperative frozen dessert is a nutrient-designed fortified food carefully created in consultation with dietitians who specialise in aged and health care services. It focuses on consumer experience, using a real food approach to deliver a great taste and flavour experience that is enjoyable to eat.
+          </p>
+        </div>
+      </div>
+
     </div>
-    <div class="cs_height_120 cs_height_lg_80"></div>
-  </section>
+  </div>
+  <div class="cs_height_120 cs_height_lg_80"></div>
+</section>
   <!-- End About Section -->
   <!-- Start Service Section -->
   <!-- <section class="cs_service_area cs_type_2">
@@ -1349,7 +1347,7 @@
   <!-- End Scroll Up Button -->
   
   <!-- Start Color Chnage  -->
-  <div class="cs_color_settings">
+  <!-- <div class="cs_color_settings">
     <div class="cs_color_settings_btn cs_center"><i class="fa-solid fa-gear"></i></div>
     <div class="cs_color_settings_in">
       <div class="cs_color_option cs_color_option_bg_1 cs_center" data-color="#132573">
@@ -1371,7 +1369,7 @@
         <i class="fa-solid fa-check"></i>
       </div>
     </div>
-  </div>
+  </div> -->
   <!-- End Color Chnage  -->
 
   <!-- Script -->
